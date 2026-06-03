@@ -6,7 +6,7 @@ from torch.utils.cpp_extension import BuildExtension, CppExtension
 import os
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-has_cuda = torch.cuda.is_available()
+has_cuda = True
 
 include_dirs = [
     os.path.join(ROOT, "mast3r_slam/backend/include"),
